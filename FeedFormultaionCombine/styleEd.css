@@ -1,0 +1,296 @@
+
+ 
+
+*{
+margin:0;
+padding:0;
+border:0;
+}
+
+body{
+background:#F5F5F5;
+color:#67727A;
+font-family:sans-serif;
+}  
+
+
+header{
+	background-color:#6991AC;
+	width:100%;
+	height:86px;
+}
+  
+#header-inner{
+	max-width:1200px;
+	margin:0 auto;
+}
+
+.navigator{
+	float:right;
+	padding:25px 20px 0 0;	
+}
+#menu-icon{
+	display:hidden;
+	width:40px;
+	height:40px;
+	background:url(image/icon.png) center;
+}    
+
+a:hover#menu-icon{
+	border-radius:4px 4px 0 0;
+}
+
+ul{ 
+	list-style-type:none;
+}
+
+.navigator ul li{
+	font-family:sans-serif;
+	font-size: 150%;
+	display: inline-block;
+	float: left;
+	padding:10px;
+}
+.navigator ul li a{ 
+ 
+     color:#F5F5F5;
+	 text-decoration: none; 
+	
+ }
+.navigator ul li a:hover{
+	color:#C3D7DF;
+}
+.current{
+	color:#C3D7DF;
+}
+
+.banner{
+	width:100%;
+	background-color:#6991AC;
+}
+
+.banner-inner{
+	max-width:1100px;
+	margin:0 auto;
+}
+
+ .one-fourth{
+	 width:25%;
+	 height:40%;
+	 float:left;
+	 text-align: center;
+ }
+
+
+#energy{
+	background-color:#F1AA90;
+}
+#protein{
+	background-color: #BEB9AD;
+}
+#minerals{
+	background-color:#AADCD2;
+}
+#pre-mixes{
+	background-color:#A2B2C1;
+}
+
+
+/*mainpanel*/
+.mainpanel{
+            background-color:#512b1e;
+    width:95%;
+	
+	height:200px;
+    background-color:rgba(67, 56, 48, 0.8);
+    font-family:sans-serif;
+	font-size: 100%;
+	border-radius: 10px;
+	margin:auto;
+	
+	
+        }
+
+.mainpanel p{
+    
+    color:fff0df;
+    color: #fff2e6; 
+	
+    
+}
+.mainpanel a{
+ font-size:24px;
+color: #fff2e6; 
+  
+}
+
+.mainpanel p{
+    
+}
+@media screen and (max-width: 768px){
+	h2{
+		font-size:150%;
+	}
+	h3{
+		font-size:125%;
+	}
+	p{
+		font-size:120%;
+	}
+	header{
+		position:absolute;
+	}
+	#menu-icon{
+		display:inline-block;
+	}
+	.navigator ul,nav:active ul{
+		display: none;
+		z-index:1000;
+		position:absolute;
+		padding:20px;
+		background:#6991AC;
+		right:20px;
+		top:60px;
+		border:1px solid #FFF;
+		border-radius: 2px 0 2px 2px;
+		width:50%;
+		
+	}
+	.navigator:hover ul{
+		display:block;
+	}
+	.navigator li{
+		text-align:center;
+		width:100%;
+		padding:10px 0;
+	}
+	.banner{
+		padding-top:86px;
+	}
+	 
+	 .one-fourth{
+		 float:left;
+		 width:100%;
+	}
+	
+	.mainpanel{
+            background-color:#512b1e;
+    width:95%;
+	
+	height:200px;
+    background-color:rgba(67, 56, 48, 0.8);
+    font-family:sans-serif;
+	font-size: 100%;
+	border-radius: 10px;
+	margin:auto;
+	
+}
+}
+
+/*style for select animal*/
+.mainpanel #menu {
+            overflow: visible;
+            position:relative;
+            z-index:2;
+            float:left;
+        }
+
+
+ .mainpanel       .parent-menu {
+            background-color: #0c8fff;
+            min-width:200px;
+            float:left;
+        }
+
+
+ .mainpanel       #menu ul
+        {
+            list-style-type:none;
+            
+        }
+
+
+ .mainpanel       #menu ul li a
+        {
+
+            padding:10px 15px;
+            display:block;
+            color:#fff;
+            text-decoration:none;
+            
+        }
+
+
+ .mainpanel           #menu ul li a:hover
+            {
+                background-color:#007ee9;
+            }
+
+
+.mainpanel #menu ul li:hover > ul {
+
+                left: 200px;
+
+                -webkit-transition: left 200ms ease-in;
+
+                -moz-transition: left 200ms ease-in;
+
+                -ms-transition: left 200ms ease-in;
+
+                transition: left 200ms ease-in;
+
+            }
+
+
+.mainpanel            #menu ul li > ul {
+
+                position: absolute;
+
+                background-color: #333;
+
+                top: 0;
+
+                /*left: -200px;*/
+
+                min-width: 200px;
+
+                z-index: -1;
+
+                height: 100%;
+
+                -webkit-transition: left 200ms ease-in;
+
+                -moz-transition: left 200ms ease-in;
+
+                -ms-transition: left 200ms ease-in;
+
+                transition: left 200ms ease-in;
+
+            }
+
+
+  .mainpanel          #menu ul li > ul li p:hover
+
+            {
+
+                background-color:#2e2e2e;
+
+            }
+
+           
+            
+/*button style*/
+.mainpanel .largeB:link, .largeB:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mainpanel .largeB:hover, .largeB:active {
+    background-color: green;
+    color: white;
+}
